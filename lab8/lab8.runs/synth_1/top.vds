@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr  2 19:24:46 2024
+# Process ID: 9492
+# Current directory: F:/lab8_student_vivado/lab8/lab8.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/lab8_student_vivado/lab8/lab8.runs/synth_1/top.vds
+# Journal file: F:/lab8_student_vivado/lab8/lab8.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RVL9TNRB, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34086 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1334.480 ; gain = 439.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/lab8_student_vivado/top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clockdiv' [F:/lab8_student_vivado/clockdiv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clockdiv' (0#1) [F:/lab8_student_vivado/clockdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MIPS' [F:/lab8_student_vivado/MIPS.v:21]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [F:/lab8_student_vivado/InstructionMemory.v:21]
+INFO: [Synth 8-3876] $readmem data file 'insmem_h.txt' is read successfully [F:/lab8_student_vivado/InstructionMemory.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [F:/lab8_student_vivado/InstructionMemory.v:21]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [F:/lab8_student_vivado/RegisterFile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'reg_half' [F:/lab8_student_vivado/reg_half.v:40]
+INFO: [Synth 8-6157] synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' [F:/lab8_student_vivado/reg_half.v:98]
+INFO: [Synth 8-6157] synthesizing module 'GND' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41984]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41984]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:125843]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:125843]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81327]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81327]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81327]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81327]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [F:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' (0#1) [F:/lab8_student_vivado/reg_half.v:98]
+WARNING: [Synth 8-7071] port 'qspo' of module 'reg_half_dist_mem_gen_v4_1_xst_1' is unconnected for instance 'BU2' [F:/lab8_student_vivado/reg_half.v:75]
+WARNING: [Synth 8-7071] port 'qdpo' of module 'reg_half_dist_mem_gen_v4_1_xst_1' is unconnected for instance 'BU2' [F:/lab8_student_vivado/reg_half.v:75]
+WARNING: [Synth 8-7023] instance 'BU2' of module 'reg_half_dist_mem_gen_v4_1_xst_1' has 18 connections declared, but only 16 given [F:/lab8_student_vivado/reg_half.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half' (0#1) [F:/lab8_student_vivado/reg_half.v:40]
+WARNING: [Synth 8-7071] port 'spo' of module 'reg_half' is unconnected for instance 'i_portA' [F:/lab8_student_vivado/RegisterFile.v:40]
+WARNING: [Synth 8-7023] instance 'i_portA' of module 'reg_half' has 7 connections declared, but only 6 given [F:/lab8_student_vivado/RegisterFile.v:40]
+WARNING: [Synth 8-7071] port 'spo' of module 'reg_half' is unconnected for instance 'i_portB' [F:/lab8_student_vivado/RegisterFile.v:48]
+WARNING: [Synth 8-7023] instance 'i_portB' of module 'reg_half' has 7 connections declared, but only 6 given [F:/lab8_student_vivado/RegisterFile.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [F:/lab8_student_vivado/RegisterFile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/lab8_student_vivado/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [F:/lab8_student_vivado/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [F:/lab8_student_vivado/DataMemory.v:21]
+INFO: [Synth 8-3876] $readmem data file 'datamem_h.txt' is read successfully [F:/lab8_student_vivado/DataMemory.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [F:/lab8_student_vivado/DataMemory.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [F:/lab8_student_vivado/ControlUnit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [F:/lab8_student_vivado/ControlUnit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS' (0#1) [F:/lab8_student_vivado/MIPS.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [F:/lab8_student_vivado/top.v:21]
+WARNING: [Synth 8-7129] Port qspo_srst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_rst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_srst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_clk in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_rst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[4] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[3] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[2] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[1] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[0] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.773 ; gain = 551.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.773 ; gain = 551.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.773 ; gain = 551.539
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1448.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/lab8_student_vivado/top.xdc]
+Finished Parsing XDC File [F:/lab8_student_vivado/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/lab8_student_vivado/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 128 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1554.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  65 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 9     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_10) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_11) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_12) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_13) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_14) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_15) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_16) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_17) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_18) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_19) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_2) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_20) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_21) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_22) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_23) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_24) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_25) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_26) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_27) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_28) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_29) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_3) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_30) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_31) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_4) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_5) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_6) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_7) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_8) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_9) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_10) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_11) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_12) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_13) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_14) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_15) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_16) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_17) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_18) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_19) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_2) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_20) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_21) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_22) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_23) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_24) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_25) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_26) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_27) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_28) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_29) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_3) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_30) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_31) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_4) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_5) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_6) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_7) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_8) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_9) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_10) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_11) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_12) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_13) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_14) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_15) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_16) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_17) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_18) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_19) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_2) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_20) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_21) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_22) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_23) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_24) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_25) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_26) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_27) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_28) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_29) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_3) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_30) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_31) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_4) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_5) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_6) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_7) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_8) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_9) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_1) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_10) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (processor/i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_11) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------------+-----------+----------------------+----------------+
+|top         | processor/i_dmem/DataArr_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------------+-----------+----------------------+----------------+
+|top         | processor/i_dmem/DataArr_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     3|
+|4     |LUT2     |   107|
+|5     |LUT3     |    78|
+|6     |LUT4     |    84|
+|7     |LUT5     |    27|
+|8     |LUT6     |   127|
+|9     |RAM32X1D |   128|
+|10    |RAM64X1S |    32|
+|11    |FDCE     |    46|
+|12    |FDPE     |     6|
+|13    |IBUF     |     4|
+|14    |OBUF     |    11|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1554.176 ; gain = 551.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1554.176 ; gain = 658.941
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1554.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 128 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: ceaeb6cd
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1554.176 ; gain = 1050.082
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1554.176 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/lab8_student_vivado/lab8/lab8.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 19:25:11 2024...
